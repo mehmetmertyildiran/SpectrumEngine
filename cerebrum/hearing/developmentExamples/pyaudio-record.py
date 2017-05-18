@@ -83,7 +83,7 @@ while True:
 		frames = []
 	sys.stdout.write(".")
 	sys.stdout.flush()
-	print(time.time() - start_time)
+	print((time.time() - start_time))
 	#save_counter += 1
 	#if save_counter >= SAVE_PERIOD:
 	#    save_counter = 0

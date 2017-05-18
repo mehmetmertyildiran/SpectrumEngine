@@ -42,11 +42,11 @@ class NeuralWeaver():
 		# Loop over the pairs coming from CROSSMODAL
 		for pair in pairs:
 			   #time.sleep(0.5) # Wait 0.5 seconds to prevent aggressive loop
-			   print pair
+			   print(pair)
 
 			   if pair['direction'] == "H2V":
-				   print "____________________________________________________________\n"
-				   print pair['timestamp1']
+				   print("____________________________________________________________\n")
+				   print(pair['timestamp1'])
 
 				   hearing_memory = HearingMemoryUtil.get_memory(pair['timestamp1'])
 				   hearing_memory = hearing_memory.next()['data']
@@ -57,20 +57,20 @@ class NeuralWeaver():
 
 				   numpy_audio = numpy.fromstring(hearing_memory, numpy.uint8)
 				   #print numpy_audio
-				   print "Audio: ",numpy_audio.shape
+				   print("Audio: ",numpy_audio.shape)
 				   #print numpy.transpose(numpy_audio.reshape((numpy_audio.shape[0],1))).shape
 
 
 				   vision_memory = VisionMemoryUtil.get_memory(pair['timestamp2'])
-				   vision_memory = vision_memory.next()
+				   vision_memory = next(vision_memory)
 
 				   frame_amodal = numpy.fromstring(vision_memory['amodal'], numpy.uint8)
-				   print "Frame Threshold: ",frame_amodal.shape
+				   print("Frame Threshold: ",frame_amodal.shape)
 				   cv2.imshow("Frame Threshhold", frame_amodal.reshape(360,640))
 				   cv2.moveWindow("Frame Threshhold",50,100)
 
 				   frame_color = numpy.fromstring(vision_memory['color'], numpy.uint8)
-				   print "Frame Delta Colored: ",frame_color.shape
+				   print("Frame Delta Colored: ",frame_color.shape)
 				   cv2.imshow("Frame Delta Colored", frame_color.reshape(360,640,3))
 				   cv2.moveWindow("Frame Delta Colored",1200,100)
 				   key = cv2.waitKey(500) & 0xFF
@@ -85,8 +85,8 @@ class NeuralWeaver():
 					   T = T.astype(numpy.float32, copy=False)
 					   X[0] = X[0] / X[0].max()
 					   T[0] = T[0] / T[0].max()
-					   print X.shape
-					   print T.shape
+					   print(X.shape)
+					   print(T.shape)
 					   if elmH2V is None:
 						   elmH2V = HPELM(X.shape[1],T.shape[1])
 						   if os.path.exists(os.path.expanduser("~/CerebralCortexH2V.pkl")):
@@ -95,10 +95,10 @@ class NeuralWeaver():
 						   else:
 							   elmH2V.add_neurons(100, "sigm")
 					   elmH2V.train(X, T, "LOO")
-					   print elmH2V.predict(X)
+					   print(elmH2V.predict(X))
 					   cv2.imshow(">>>PREDICTION<<<", numpy.transpose(elmH2V.predict(X)).reshape(360,640))
 					   cv2.moveWindow(">>>PREDICTION<<<",50,550)
 
-		print elmH2V.nnet.neurons
+		print(elmH2V.nnet.neurons)
 		elmH2V.save(os.path.expanduser("~/CerebralCortexH2V.pkl"))
 		#NeuralNetUtil.write_neurons(elmH2V.nnet.neurons, "H2V")

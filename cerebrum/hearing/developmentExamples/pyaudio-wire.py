@@ -41,8 +41,8 @@ print("* done")
 
 numpydata = np.fromstring(frames, dtype=np.int16)
 
-print len(numpydata)
-print numpydata[100000]
+print(len(numpydata))
+print(numpydata[100000])
 
 # plot data
 plt.plot(numpydata)

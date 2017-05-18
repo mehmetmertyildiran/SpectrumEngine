@@ -8,4 +8,4 @@ HIPPOCAMPUS = os.path.expanduser("~/Hippocampus/")
 
 if os.path.exists(HIPPOCAMPUS):
 	shutil.rmtree(HIPPOCAMPUS)
-	print HIPPOCAMPUS + " is removed"
+	print(HIPPOCAMPUS + " is removed")

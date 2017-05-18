@@ -106,17 +106,17 @@ def initiate():
 			if not hearing_perception_process.is_alive():
 				active_perceptions -= 1
 				args["audio"] = None
-				print "WARNING: Hearing Perception process is terminated."
+				print("WARNING: Hearing Perception process is terminated.")
 		if args["video"]:
 			if not vision_perception_process.is_alive():
 				active_perceptions -= 1
 				args["video"] = None
-				print "WARNING: Vision Perception process is terminated."
+				print("WARNING: Vision Perception process is terminated.")
 		if args["captions"]:
 			if not language_analysis_process.is_alive():
 				active_perceptions -= 1
 				args["captions"] = None
-				print "WARNING: Language Analysis process is terminated."
+				print("WARNING: Language Analysis process is terminated.")
 		if active_perceptions == 0 and not training:
 				neuralnet_weaver_process = multiprocessing.Process(target=NeuralWeaver.start) # Define neuralnet weaver process
 				neuralnet_weaver_process.start() # Start neuralnet weaver process
@@ -128,8 +128,8 @@ def initiate():
 				crossmodal_mapperHL_process.terminate()
 			if crossmodal_mapperVL_process.is_alive():
 				crossmodal_mapperVL_process.terminate()
-			print "Training is finished."
+			print("Training is finished.")
 			break
 
 	os.killpg(os.getpgid(rethinkdb_process.pid), signal.SIGTERM)
-	print "Cerebrum exiting."
+	print("Cerebrum exiting.")

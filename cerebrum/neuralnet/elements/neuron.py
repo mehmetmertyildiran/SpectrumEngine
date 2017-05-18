@@ -41,10 +41,10 @@ class Neuron():
 				if id(neuron) != id(self):
 					#if random.randint(1,neuron_count/100) == 1:
 					self.connections[id(neuron)] = round(random.uniform(0.1, 1.0), 2)
-			print "Neuron ID: " + str(id(self))
-			print "    Potential: " + str(self.potential)
-			print "    Error: " + str(self.error)
-			print "    Connections: " + str(len(self.connections))
+			print("Neuron ID: " + str(id(self)))
+			print("    Potential: " + str(self.potential))
+			print("    Error: " + str(self.error))
+			print("    Connections: " + str(len(self.connections)))
 
 	def activate(self):
 		while True:
@@ -77,7 +77,7 @@ class Supercluster():
 	def __init__(self,size):
 		for i in range(size):
 			Neuron()
-		print str(size) + " neurons created."
+		print(str(size) + " neurons created.")
 		self.n = 0
 		self.build_connections()
 		#pool = Pool(4, self.init_worker)
@@ -91,6 +91,6 @@ class Supercluster():
 			self.n += 1
 			#neuron.thread.start()
 			neuron.partially_connect()
-			print "Counter: " + str(self.n)
+			print("Counter: " + str(self.n))
 
 Supercluster(100000)

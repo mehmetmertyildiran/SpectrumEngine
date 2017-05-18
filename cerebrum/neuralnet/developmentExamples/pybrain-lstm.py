@@ -1,5 +1,5 @@
 # http://stackoverflow.com/questions/25967922/pybrain-time-series-prediction-using-lstm-recurrent-nets
-from __future__ import print_function
+
 from pybrain.datasets import SequentialDataSet
 from itertools import cycle
 from pybrain.tools.shortcuts import buildNetwork
@@ -23,7 +23,7 @@ train_errors = [] # save errors for plotting later
 EPOCHS_PER_CYCLE = 5
 CYCLES = 100
 EPOCHS = EPOCHS_PER_CYCLE * CYCLES
-for i in xrange(CYCLES):
+for i in range(CYCLES):
 	trainer.trainEpochs(EPOCHS_PER_CYCLE)
 	train_errors.append(trainer.testOnData())
 	epoch = (i+1) * EPOCHS_PER_CYCLE
@@ -33,7 +33,7 @@ for i in xrange(CYCLES):
 print()
 print("final error =", train_errors[-1])
 
-plt.plot(range(0, EPOCHS, EPOCHS_PER_CYCLE), train_errors)
+plt.plot(list(range(0, EPOCHS, EPOCHS_PER_CYCLE)), train_errors)
 plt.xlabel('epoch')
 plt.ylabel('error')
 plt.show()

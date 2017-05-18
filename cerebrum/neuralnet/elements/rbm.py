@@ -220,8 +220,8 @@ class Trainer(object):
 		  row represents one visible data sample.
 		'''
 		passes = self.rbm.iter_passes(visible_batch)
-		v0, h0 = passes.next()
-		v1, h1 = passes.next()
+		v0, h0 = next(passes)
+		v1, h1 = next(passes)
 		gw = (np.dot(h0, v0) - np.dot(h1, v1)) / len(visible_batch)
 		gv = (v0 - v1).mean(axis=0)
 		gh = (h0 - h1).mean(axis=1)

@@ -84,7 +84,7 @@ while True: # On this level it gets only one frame
 
 		angles_array = [] # Angle list of all newly created tiny lines
 
-		for i,(good_point2,good_point1) in enumerate(zip(good_points2,good_points1)): # Get point pairs one by one
+		for i,(good_point2,good_point1) in enumerate(list(zip(good_points2,good_points1))): # Get point pairs one by one
 
 			# Get coordinates of points
 			x2,y2 = good_point2.ravel() # New point
@@ -160,7 +160,7 @@ while True: # On this level it gets only one frame
 			angles_array4 = [] # Angle list of all newly created tiny lines
 			mask_delta = numpy.zeros_like(old_frame) # Create a mask image for drawing purposes (delta frame)
 
-			for i,(good_point2,good_point1) in enumerate(zip(good_points2,good_points1)): # Get point pairs one by one
+			for i,(good_point2,good_point1) in enumerate(list(zip(good_points2,good_points1))): # Get point pairs one by one
 
 				# Get coordinates of points
 				x2,y2 = good_point2.ravel() # New point

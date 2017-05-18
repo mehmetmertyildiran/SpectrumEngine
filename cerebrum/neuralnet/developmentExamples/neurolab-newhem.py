@@ -25,11 +25,11 @@ net = nl.net.newhem(target)
 
 output = net.sim(target)
 print("Test on train samples (must be [0, 1, 2, 3, 4])")
-print(np.argmax(output, axis=0))
+print((np.argmax(output, axis=0)))
 
 output = net.sim([input[0]])
 print("Outputs on recurent cycle:")
-print(np.array(net.layers[1].outs))
+print((np.array(net.layers[1].outs)))
 
 output = net.sim(input)
 print("Outputs on test sample:")

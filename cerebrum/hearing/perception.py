@@ -12,7 +12,7 @@ import pyqtgraph as pg # A pure-python graphics and GUI library built on PyQt4 /
 from PyQt4 import QtCore, QtGui # A comprehensive set of Python bindings for Digia's Qt cross platform GUI toolkit.
 import time # Provides various time-related functions.
 from cerebrum.hearing.utilities import HearingMemoryUtil # BUILT-IN Memory operations package
-import Tkinter
+import tkinter
 
 CHUNK = 1024 # Smallest unit of audio. 1024 bytes
 FORMAT = pyaudio.paInt16 # Data format
@@ -22,7 +22,7 @@ THRESHOLD = 1000 # Threshhold value for detecting stimulant
 SILENCE_DETECTION = 5 # Wait number of frames to decide whether it fell silent or not
 EMPTY_CHUNK = chr(int('000000', 2)) * CHUNK * 4 # Create an empty unit of audio for just once
 WAVE_OUTPUT_FILENAME = "hearing/memory/" +  str(datetime.date.today()) + ".wav" # Example path if saving needed
-root = Tkinter.Tk()
+root = tkinter.Tk()
 SCREEN_WIDTH = root.winfo_screenwidth()
 SCREEN_HEIGHT = root.winfo_screenheight()
 

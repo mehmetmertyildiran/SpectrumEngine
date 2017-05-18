@@ -7,7 +7,7 @@ while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
 
-    print len(frame[0][0])
+    print(len(frame[0][0]))
 
     # Our operations on the frame come here
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

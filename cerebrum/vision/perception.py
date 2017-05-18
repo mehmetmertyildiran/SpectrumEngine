@@ -9,14 +9,14 @@ import os # Provides a portable way of using operating system dependent function
 import multiprocessing # A package that supports spawning processes using an API similar to the threading module.
 from cerebrum.vision.utilities import VisionMemoryUtil # BUILT-IN Memory operations package
 import random # Pseudo-random number generators for various distributions.
-import Tkinter
+import tkinter
 
 STABILIZATION_DETECTION = 5 # Number of frames to detect stabilization
 NON_STATIONARY_PERCENTAGE = 70 # Percentage of frame for detecting NON-STATIONARY CAMERA. Like: ( height * width * float(X) / float(100) )
 NON_ZERO_PERCENTAGE = 0 #  Percentage of frame(threshold) for detecting unnecessary movement
 TARGET_HEIGHT = 360 # Number of horizontal lines for target video and processing. Like 720p, 360p etc.
 MIN_AREA = 500 # Minimum area in square pixels to detect a motion
-root = Tkinter.Tk()
+root = tkinter.Tk()
 SCREEN_WIDTH = root.winfo_screenwidth()
 SCREEN_HEIGHT = root.winfo_screenheight()
 

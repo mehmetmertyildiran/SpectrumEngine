@@ -46,9 +46,9 @@ class LanguageAnalyzer():
 							process5 = multiprocessing.Process(target=LanguageMemoryUtil.add_memory, args=(word_inphones, starting_time, ending_time)) # Define write memory process
 							process5.start() # Start write memory process
 						starting_time = ending_time + datetime.timedelta(milliseconds=50)
-					print subs[i].text + "\n" # Print subtitle's text
-					print phones + "\n"
-					print "_____________________________________________________________________________________\n"
+					print(subs[i].text + "\n") # Print subtitle's text
+					print(phones + "\n")
+					print("_____________________________________________________________________________________\n")
 
 					language_analysis_stimulated.value = 0 # Language analysis NOT stimulated
 					i  += 1 # Increase step counter

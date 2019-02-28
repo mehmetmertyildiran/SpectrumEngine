@@ -1,0 +1,126 @@
+Skip to content
+Your account has been flagged.
+Because of that, your profile is hidden from the public. If you believe this is a mistake, contact support to have your account status reviewed.
+
+audio extreme learning
+Repositories2
+Code142K
+Commits1
+Issues238
+Marketplace0
+Topics0
+Wikis71
+Users0
+Language
+
+Sort
+
+142,120 code results
+@erfan-tivakoli
+erfan-tivakoli/ResarchGate – 275647713.json
+Showing the top two matches
+Last indexed on Jul 2, 2018
+JSON
+{"cited_in": ["https://www.researchgate.net/publication/284126862_Video_modeling_and_learning_on_Riemannian_manifold_for_emotion_recognition_in_the_wild"], "datas": {"publication_uid": "275647713", "title": "Combining modality-specific extreme learning machines for emotion recognition in the wild", "authors": {"1": "Heysem Kaya", "2": "Albert Ali Salah"}, "abstract": "This paper proposes extreme learning machines (ELM) for modeling audio and video features for emotion recognition under uncontrolled conditions. The ELM paradigm is a fast and accurate learning alternative for single layer Feedforward networks. We experiment on the acted facial expressions in the wild corpus, which features seven discrete emotions, and adhere to the EmotiW 2014 challenge protocols. In our study, better results for both modalities are obtained with kernel ELM compared to basic ELM. We contrast several fusion approaches and reach a test set accuracy of 50.12 % (over a video-only baseline of 33.70 %) on the seven-class (i.e. six basic emotions plus neutral) EmotiW 2014 Challenge, by combining one audio and three video sub-systems. We also compare ELM with partial least squares regression based classification that is used in the top performing system of EmotiW 2014, and discuss the advantages of both approaches."}, "references": ["https://www.researchgate.net/publication/220656409_Geometric_Means_in_a_Novel_Vector_Space_Structure_on_Sysmetric_Positive-Definite_Matrices", "https://www.researchgate.net/publication/23631413_Multivariate_Normal_Distributions_Parametrized_as_a_Riemannian_Symmetric_Space", "https://www.researchgate.net/publication/7641976_Feature_Selection_Based_On_Mutual_Information_Criteria_of_Max-DependencyMax-Relevance_and_Min-Redundancy", "https://www.researchgate.net/publication/266654707_Partial_least_squares_regression_on_Grassmannian_manifold_for_emotion_recognition", "https://www.researchgate.net/publication/224929655_openSMILE_--_The_Munich_Versatile_and_Fast_Open-Source_Audio_Feature_Extractor", "https://www.researchgate.net/publication/220578095_Least_Squares_Support_Vector_Machine_Classifiers", "https://www.researchgate.net/publication/8204636_Canonical_Correlation_Analysis_An_Overview_with_Application_to_Learning_Methods", "https://www.researchgate.net/publication/261206959_Local_Gabor_Binary_Patterns_from_Three_Orthogonal_Planes_for_Automatic_Facial_Expression_Recognition", "https://www.researchgate.net/publication/3193420_Multiresolution_Gray-Scale_and_Rotation_Invariant_Texture_Classification_with_Local_Binary_Patterns", "https://www.researchgate.net/publication/221491017_A_database_of_German_emotional_speech", "https://www.researchgate.net/publication/259889921_The_INTERSPEECH_2013_computational_paralinguistics_challenge_Social_signals_conflict_emotion_autism", "https://www.researchgate.net/publication/232638637_Cross-Corpus_Acoustic_Emotion_Recognition_Variances_and_Strategies", "https://www.researchgate.net/publication/256575180_Collecting_Large_Richly_Annotated_Facial-Expression_Databases_from_Movies", "https://www.researchgate.net/publication/221481381_The_INTERSPEECH_2010_paralinguistic_challenge", "https://www.researchgate.net/publication/262313360_Emotion_Recognition_In_The_Wild_Challenge_2013", "https://www.researchgate.net/publication/24061088_Note_on_the_Sampling_Error_of_the_Difference_Between_Correlated_Proportions_or_Percentages", "https://www.researchgate.net/publication/221936069_Introduction_to_Machine_Learning", "https://www.researchgate.net/publication/269100829_CCA_based_feature_selection_with_application_to_continuous_depression_recognition_from_acoustic_speech_features", "https://www.researchgate.net/publication/221346037_Grassman_Discriminant_Analysis_a_Unifying_View_on_Subspace-Based_learning", "https://www.researchgate.net/publication/269100662_Random_Discriminative_Projection_Based_Feature_Selection_with_Application_to_Conflict_Recognition", "https://www.researchgate.net/publication/269100765_Canonical_Correlation_Analysis_and_Local_Fisher_Discriminant_Analysis_based_Multi-View_Acoustic_Feature_Reduction_for_Physical_Load_Prediction", "https://www.researchgate.net/publication/262165643_Combining_modality_specific_deep_neural_networks_for_emotion_recognition_in_video", "https://www.researchgate.net/publication/4238264_The_eNTERFACE05_Audio-Visual_Emotion_Database", "https://www.researchgate.net/publication/51704039_Extreme_learning_machine_for_regression_and_multiclass_classification_IEEE_Trans_Syst_Man_Cybern_422_513-529", "https://www.researchgate.net/publication/224929562_Voice_and_Speech_Analysis_in_Search_of_States_and_Traits", "https://www.researchgate.net/publication/261502521_Covariance_discriminative_learning_A_natural_and_efficient_approach_to_image_set_classification", "https://www.researchgate.net/publication/243780258_Line_Spectrum_Representation_of_Linear_Predictor_Coefficients_of_Speech_Signals", "https://www.researchgate.net/publication/222667300_Extreme_Learning_Machine_Theory_and_Applications", "https://www.researchgate.net/publication/267213794_Speech_Emotion_Recognition_Using_Deep_Neural_Network_and_Extreme_Learning_Machine", "https://www.researchgate.net/publication/269100725_Combining_Modality-Specific_Extreme_Learning_Machines_for_Emotion_Recognition_in_the_Wild", "https://www.researchgate.net/publication/200038910_Lowe_DG_Distinctive_Image_Features_from_Scale-Invariant_Key-points_Int_J_Comput_Vision_602_91-110", "https://www.researchgate.net/publication/4116697_Extreme_learning_machine_A_new_learning_scheme_of_feedforward_neural_networks", "https://www.researchgate.net/publication/259399116_Kernel_Learning_for_Extrinsic_Classification_of_Manifold_Features"]}
+@lrq3000
+lrq3000/oacs – winsorize.py
+Showing the top four matches
+Last indexed on Jun 26, 2018
+Python
+# Winsorizing the data to remove too extreme outliers values (equivalent of clipping in audio)
+
+from oacs.preoptimization.basepreoptimization import BasePreOptimization
+            # Compute the percentiles at learning
+            extreme_low = pd.Series(scoreatpercentile(X, per=r, axis=0), index=X.columns)
+@trexwithoutt
+trexwithoutt/Speech-Emotion-Recognition-utterancelevel-DNN – README.md
+Showing the top four matches
+Last indexed on Jul 3, 2018
+Markdown
+	- Support Vector Machine
+
+	- K Nearest Neighbors
+
+	- Deep Neural Networks
+
+	- Extreme Learning Machine
+
+## Introduction
+
+| Low Level Descriptors            | MFCC, Mel-filterbank, formant, HNR, jitter, shimmer, etc. |
+- Percentage above certain threshold
+
+### Extreme Learning Machine [*introduce*](http://www.ntu.edu.sg/home/egbhuang/)
+
+- **Network architectures**: a homogenous hierarchical learning machine for partially or fully connected multi layers / single layer of (artifical or biological) networks with almost any type of practical (artifical) hidden nodes (or bilogical neurons).
+@therobinhood
+therobinhood/part-15 – 02d2abcd96c3d14a139e95debc85d8c9f620f4cd.json
+Showing the top match
+Last indexed on Jul 6, 2018
+JSON
+{"title":"DC Extreme Machines The Need for Speed 3of9 The Landspeed Record","uid":8385337,"size":937600180,"categoryP":"video","categoryS":"tv_shows","magnet":"?xt=urn:btih:02d2abcd96c3d14a139e95debc85d8c9f620f4cd&amp;dn=DC+Extreme+Machines+The+Need+for+Speed+3of9+The+Landspeed+Record&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969","seeders":2,"leechers":1,"uploader":"MVGroup","files":1,"time":1366277017,"description":"The Need for Speed\n\nTechnology Documentary hosted by William Hootkins, published by Discovery Channel broadcasted as part of DC Extreme Machines series in 2000 - English narration\n\n\n\nInformation\n------------------------------\n\nFrom the British speed heroes of the 1930s to the first man to break the sound barrier; man is constantly obsessed with pushing the boundaries of speed, often at the ultimate cost - their own lives. This is a celebration of our adrenaline-fuelled passion to go faster than ever before. So sit back, buckle up and prepare to be overwhelmed by the need for speed.\n\n\n\n\n3)  The Landspeed Record \nAfter many trials and tribulations, we follow the continued attempts of Craig Breedlove and Richard Noble to achieve the elusive landspeed record. We follow Richard Noble's tests and preparation in the Jordan desert and look at the new modifications to his car. This film culminates with Noble and Breedlove's head-to-head challenge at Blackrock in September 1997, each driver hungry not only for the record, but also to go supersonic!\n\nNarrator: William Hootkins\nDirector: Brian Leckey\nProducer: Alice Harper\nExecutive Producer: Stuart Carter\nExecutive Producer for the Learning Channel: Susan Winslow\nProduced By Pioneer Productions For The Learning Channel\nPioneer Productions TLC\n1999 Discovery Communications, Inc.\n\n\n\n\nTechnical Specs\n------------------------------\n\nVideo Codec: XviD ISO MPEG-4\nVideo Bitrate: 2176 kbps\nVideo Resolution: 704x528\nVideo Aspect Ratio: 1.333:1\nFrames Per Second: 25.000\nAudio Codec: 0x2000 (Dolby AC3) AC3\nAudio Bitrate: 192kb/s CBR 48000 Hz\nAudio Streams: 2\nAudio Languages: english\nRunTime Per Part: 52:18.520\nNumber Of Parts: 9\nPart Size: 894 MB\nRipped by: DocFreak08\n\n\n","torrent":{"xt":"urn:btih:02d2abcd96c3d14a139e95debc85d8c9f620f4cd","amp;dn":"DC+Extreme+Machines+The+Need+for+Speed+3of9+The+Landspeed+Record","amp;tr":["udp%3A%2F%2Ftracker.openbittorrent.com%3A80","udp%3A%2F%2Fopen.demonii.com%3A1337","udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969","udp%3A%2F%2Fexodus.desync.com%3A6969"],"infoHash":"02d2abcd96c3d14a139e95debc85d8c9f620f4cd","infoHashBuffer":{"type":"Buffer","data":[2,210,171,205,150,195,209,74,19,158,149,222,188,133,216,201,246,32,244,205]},"announce":[],"urlList":[]}}
+@therobinhood
+therobinhood/part-29 – 8a587087493b51e3e5110830df5fbd7dc7be3d0e.json
+Showing the top two matches
+Last indexed on Jul 6, 2018
+JSON
+{"title":"clive westwood- extreme improve language learning hypnosis.mp3","uid":10647122,"size":93607216,"categoryP":"audio","categoryS":"music","magnet":"?xt=urn:btih:8a587087493b51e3e5110830df5fbd7dc7be3d0e&amp;dn=clive+westwood-+extreme+improve+language+learning+hypnosis.mp3&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969","seeders":1,"leechers":1,"uploader":null,"files":1,"time":1406560593,"description":"Hypnotherapy in Adelaide.\nClive Westwood is one of Australia's respected, leading Hypnotherapy Specialists, focusing on one-to-one hypnotherapy sessions, group hypnosis, and downloadable hypnotherapy mp3 sessions. Clive has studied under the greatest hypnotherapists in the world, and has made appearances on 9 News and ABC Morning Radio. &lt;a href=&quot;\nhttp://www.clivewestwoodhypnotherapy.com.au/&quot; rel=&quot;nofollow&quot; target=&quot;_NEW&quot;&gt;\nhttp://www.clivewestwoodhypnotherapy.com.au/&lt;/a&gt; ","torrent":{"xt":"urn:btih:8a587087493b51e3e5110830df5fbd7dc7be3d0e","amp;dn":"clive+westwood-+extreme+improve+language+learning+hypnosis.mp3","amp;tr":["udp%3A%2F%2Ftracker.openbittorrent.com%3A80","udp%3A%2F%2Fopen.demonii.com%3A1337","udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969","udp%3A%2F%2Fexodus.desync.com%3A6969"],"infoHash":"8a587087493b51e3e5110830df5fbd7dc7be3d0e","infoHashBuffer":{"type":"Buffer","data":[138,88,112,135,73,59,81,227,229,17,8,48,223,95,189,125,199,190,61,14]},"announce":[],"urlList":[]}}
+@zhannar
+zhannar/Media-Bias-NLP-Clustering – 157379_metadata.json
+Showing the top match
+Last indexed on Jul 3, 2018
+JSON
+{"article_title": "Eco Adventure Extreme Camp in New Haven Offers Affordable, Outdoor Fun", "article_keywords": ["affordable", "summer", "outdoor", "eco", "camp", "children", "day", "youth", "offers", "adventure", "learning", "fun", "explained", "haven", "extreme"], "article_url": "http://wnpr.org/post/eco-adventure-extreme-camp-new-haven-offers-affordable-outdoor-fun", "article_text": "With school starting soon and temperatures beginning to cool, kids are looking back and wondering if they made the most of their summer. For those who attended New Haven's Eco Adventure Extreme Camp, the answer is likely: Yes!\n\nAccording to The National Summer Learning Association, \"More than half of the achievement gap between lower- and higher-income youth can be explained by unequal access to summer learning opportunities.\" Subsidized by the city and run through the Parks and Recreation Department, The Eco Adventure Extreme Camp seeks to address this issue.\n\nWhile not free, the camp does strive to accommodate children of all income levels, regardless of their family's ability to pay. The camp runs throughout the summer in two-week sessions, providing all necessary equipment as well as meals.\n\nJoshua Green, 13, from New Haven, explained why he returns to the program each summer. \"It's fun because it's not just the same thing every day,\" he said. \"Today, we'll go mountain biking, and tomorrow, we'll go kayaking. It's something new every day, and that's why I've kept coming back. It's a new adventure every time I come here.\"\n\nRafting, rock climbing, scuba-diving, archery, and overnight camping are just a few of the additional activities children experience at the Eco Adventure Extreme Camp.", "article_metadata": {"category": "Education", "description": "With school starting soon and temperatures beginning to cool, kids are looking back and wondering if they made the most of their summer. For those who", "Generator": "Drupal 7 (http://drupal.org)", "programs": "none", "og": {"url": "http://wnpr.org/post/eco-adventure-extreme-camp-new-haven-offers-affordable-outdoor-fun", "image": "http://mediad.publicbroadcasting.net/p/wnpr/files/styles/medium/public/201408/Hvizdak_140721_ph0019-L.jpg", "type": "article", "description": "With school starting soon and temperatures beginning to cool, kids are looking back and wondering if they made the most of their summer. For those who", "title": "Eco Adventure Extreme Camp in New Haven Offers Affordable, Outdoor Fun"}, "org_id": 0, "twitter": {"site": "@wnpr", "card": "summary"}, "author": "Josh Nilaya", "wordCount": 232, "dc": {"title": "Eco Adventure Extreme Camp in New Haven Offers Affordable, Outdoor Fun"}, "nid": 26966, "datePublished": "2014-08-18", "story_id": 341305961, "keywords": "children, New Haven Region, Connecticut, The Daily", "has_audio": 1, "viewport": "width=device-width"}, "article_summary": "For those who attended New Haven's Eco Adventure Extreme Camp, the answer is likely: Yes!\nSubsidized by the city and run through the Parks and Recreation Department, The Eco Adventure Extreme Camp seeks to address this issue.\nRafting, rock climbing, scuba-diving, archery, and overnight camping are just a few of the additional activities children experience at the Eco Adventure Extreme Camp.\nAccording to The National Summer Learning Association, \"More than half of the achievement gap between lower- and higher-income youth can be explained by unequal access to summer learning opportunities.\"\nWhile not free, the camp does strive to accommodate children of all income levels, regardless of their family's ability to pay."}
+@jmgore75
+jmgore75/PracticalML – Algorithms.md
+Showing the top two matches
+Last indexed on Jun 30, 2018
+Markdown
+- Learners that produce interpretable output (rule sets) can yield useful insights.
+
+## Beyond the basics
+
+Philosophy ahead
+
+## "Extreme" machine learning
+
+We have discussed two "extreme" algorithms: [Extremely Randomized Trees](RandomForests.md#extremely-randomized-trees), a variant on Random Forests, and [Extreme Learning Machines](NeuralNetworks.md#extreme-learning-machines), a variant on neural networks.  Despite having completely different algorithm designs, the "extreme" variants have a fundamental behavior in common: rather than trying to _optimize_ some internal parameter, they instead choose from _many random options_, and thus have _less intrinsic bias_ than their cousins.  
+@CompleteUnityDeveloper
+CompleteUnityDeveloper/05-Block-Breaker – README.md
+Showing the top three matches
+Last indexed on Nov 6, 2018
+Markdown
+This is the [Complete Unity Developer](http://gdev.tv/cudgithub) - one of the most successful e-learning courses on the internet! Completely re-worked from scratch with brand-new projects and our latest teaching techniques. You will benefit from the fact we have already taught nearly half a million students game development, many shipping commercial games as a result.
+3. Rick does some extreme tuning.
+
+**After watching (learning outcomes)…**
+Able to audit your project and apply extreme tuning to make your project rad.
+@zhuangzhuang131419
+zhuangzhuang131419/Block_Break – README.md
+Showing the top three matches
+Last indexed 29 days ago
+Markdown
+This is the [Complete Unity Developer](http://gdev.tv/cudgithub) - one of the most successful e-learning courses on the internet! Completely re-worked from scratch with brand-new projects and our latest teaching techniques. You will benefit from the fact we have already taught nearly half a million students game development, many shipping commercial games as a result.
+3. Rick does some extreme tuning.
+
+**After watching (learning outcomes)…**
+Able to audit your project and apply extreme tuning to make your project rad.
+@erfan-tivakoli
+erfan-tivakoli/ResarchGate – 269108094.json
+Showing the top match
+Last indexed on Jul 2, 2018
+JSON
+{"cited_in": ["https://www.researchgate.net/publication/284593613_A_Temporally_Piece-wise_Fisher_Vector_Approach_for_Depression_Analysis", "https://www.researchgate.net/publication/269100605_Continuous_Mapping_of_Personality_Traits_A_Novel_Challenge_and_Failure_Conditions", "https://www.researchgate.net/publication/269100611_Speaker-and_Corpus-Independent_Methods_for_Affect_Classification_in_Computational_Paralinguistics", "https://www.researchgate.net/publication/275060304_A_review_of_depression_and_suicide_risk_assessment_using_speech_analysis", "https://www.researchgate.net/publication/269100662_Random_Discriminative_Projection_Based_Feature_Selection_with_Application_to_Conflict_Recognition", "https://www.researchgate.net/publication/283352797_An_Investigation_of_Annotation_Delay_Compensation_and_Output-Associative_Fusion_for_Multimodal_Continuous_Emotion_Prediction"], "datas": {"publication_uid": "269108094", "title": "Ensemble CCA for Continuous Emotion Prediction", "authors": {"1": "Heysem Kaya", "3": "Albert Ali Salah", "2": "Fazilet \u00c7illi"}, "abstract": "  ABSTRACT This paper presents our work on ACM MM Audio Visual Emotion Corpus 2014 (AVEC 2014) using the baseline fea-tures in accordance with the challenge protocol. For predic-tion, we use Canonical Correlation Analysis (CCA) in af-fect sub-challenge (ASC) and Moore-Penrose generalized in-verse (MPGI) in depression sub-challenge (DSC). The video baseline provides histograms of Local Gabor Binary Pat-terns from Three Orthogonal Planes (LGBP-TOP) features. Based on our preliminary experiments on AVEC 2013 chal-lenge data, we focus on the inner facial regions that corre-spond to eyes and mouth area. We obtain an ensemble of regional linear regressors via CCA and MPGI. We also enrich the 2014 baseline set with Local Phase Quantization (LPQ) features extracted using Intraface toolkit detected/tracked faces. Combining both representations in a CCA ensemble approach, on the challenge test set we reach an average Pear-son's Correlation Coefficient (PCC) of 0.3932, outperform-ing the ASC test set baseline PCC of 0.1966. On the DSC, combining modality specific MPGI based ensemble systems, we reach 9.61 Root Mean Square Error (RMSE).  "}, "references": ["https://www.researchgate.net/publication/229057967_Relations_Between_Two_Sets_of_Variates", "https://www.researchgate.net/publication/51704039_Extreme_learning_machine_for_regression_and_multiclass_classification_IEEE_Trans_Syst_Man_Cybern_422_513-529", "https://www.researchgate.net/publication/221292325_Action_unit_detection_using_sparse_appearance_descriptors_in_space-time_video_volumes", "https://www.researchgate.net/publication/224929671_The_Interspeech_2009_Emotion_Challenge", "https://www.researchgate.net/publication/14216180_Beck_AT_Steer_RA_Ball_R_Ranieri_W_Comparison_of_Beck_depression_inventories_-IA_and_-II_in_psychiatric_outpatients_J_Pers_Assess_67_588-597", "https://www.researchgate.net/publication/255482849_Deep_Canonical_Correlation_Analysis", "https://www.researchgate.net/publication/220217381_A_feature_selection_method_based_on_kernel_canonical_correlation_analysis_and_the_minimum_Redundancy-Maximum_Relevance_filter_method", "https://www.researchgate.net/publication/225134443_Extreme_learning_machines_a_survey_Int_J_Mach_Learn_Cybern", "https://www.researchgate.net/publication/4116697_Extreme_learning_machine_A_new_learning_scheme_of_feedforward_neural_networks", "https://www.researchgate.net/publication/269100829_CCA_based_feature_selection_with_application_to_continuous_depression_recognition_from_acoustic_speech_features", "https://www.researchgate.net/publication/216300608_The_Use_of_Multiple_Measurements_in_Taxonomic_Problems_Ann_Eugenics_7", "https://www.researchgate.net/publication/236900431_Real-Life_Voice_Activity_Detection_with_LSTM_Recurrent_Neural_Networks_and_application_to_Holliwood_Movies", "https://www.researchgate.net/publication/8204636_Canonical_Correlation_Analysis_An_Overview_with_Application_to_Learning_Methods", "https://www.researchgate.net/publication/261206959_Local_Gabor_Binary_Patterns_from_Three_Orthogonal_Planes_for_Automatic_Facial_Expression_Recognition", "https://www.researchgate.net/publication/222667300_Extreme_Learning_Machine_Theory_and_Applications", "https://www.researchgate.net/publication/266654355_Correlated-spaces_regression_for_learning_continuous_emotion_dimensions", "https://www.researchgate.net/publication/262157517_AVEC_2013_-_The_continuous_AudioVisual_Emotion_and_depression_recognition_challenge", "https://www.researchgate.net/publication/260528825_Ensemble_canonical_correlation_analysis", "https://www.researchgate.net/publication/231948467_Further_Aspects_of_the_Theory_of_Multiple_Regression", "https://www.researchgate.net/publication/259889921_The_INTERSPEECH_2013_computational_paralinguistics_challenge_Social_signals_conflict_emotion_autism", "https://www.researchgate.net/publication/44641013_Central_Subspace_Dimensionality_Reduction_Using_Covariance_Operators", "https://www.researchgate.net/publication/264273594_Extreme_learning_machines"]}
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
